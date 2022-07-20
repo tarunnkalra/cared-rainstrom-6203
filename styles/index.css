@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(47, 44, 44);
+}
+
+.product{
+    position: relative;
+    overflow: hidden;
+   
+    
+}
+.product>h1{
+color: white;
+font-family:-apple-system, BlinkMacSystemFont, -webkit-system-font, "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+font-size:17px ;
+text-decoration:none solid rgba(255, 255, 255, 0.92);
+margin-left: 50px;
+
+}
+.product>span{
+    color: rgb(88,88,88);
+    font-family:-apple-system, BlinkMacSystemFont, -webkit-system-font, "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+font-size:15px ;
+text-decoration:none solid rgba(255, 255, 255, 0.64);
+font-weight: 400;
+margin-left: 50px;
+
+    }
+.product-container{
+width: 94%;
+margin: 15px auto;
+
+overflow-y: hidden;
+  display: grid;
+  grid-template-columns: repeat(5,348px);
+  grid-template-rows: auto;
+  gap: 15px;
+  scroll-behavior: smooth;
+
+
+}
+.product-container::-webkit-scrollbar{
+    width: 0px;
+
+}
+
+
+
+.product-card{
+
+   padding-bottom: 30px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.496);
+  
+  
+   
+}
+
+.product-card>img{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.product:hover .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    color: rgba(0, 0, 0, 0.326);
+    background-color:transparent;
+margin: 0 15px;
+border: none;
+font-size: 30px;
+font-weight: bold;
+translate: 0.5s;
+}
+.next{
+    right: 5px;
+    
+}
+
+.prev{
+    left: 5px;
+    
+}
